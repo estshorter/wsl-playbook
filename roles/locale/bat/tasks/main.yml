@@ -1,0 +1,8 @@
+- import_role: { name: check/absent }
+  vars:
+    target: local_conf
+    command: "local | grep -E 'LANG={{ locale_lang }}'"
+
+- name: Install 
+  become: yes
+  command: "update-locale LANG={{ locale_lang }}""
