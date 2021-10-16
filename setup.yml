@@ -3,9 +3,12 @@
     - apt/upgrade
     - apt/install
     - apt/git
+    - apt/fish
+    - ar/exa
     - ar/fzf
     - deb/bat
     - deb/delta
+    - deb/fd
     - deb/ripgrep
     - conf
     - fish_plugin/fisher
