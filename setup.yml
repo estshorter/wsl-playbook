@@ -15,3 +15,4 @@
     - fish_plugin/z
     - fish_plugin/fzf
     - fish_plugin/theme-bobthefish
+    - locale
