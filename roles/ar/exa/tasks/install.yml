@@ -1,3 +1,8 @@
+- name: create /tmp/exa directory for unarchiving
+  file:
+    path: /tmp/exa
+    state: directory
+
 - name: Download
   unarchive:
     src: "{{ exa_url }}"
