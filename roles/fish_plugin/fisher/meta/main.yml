@@ -1,0 +1,3 @@
+dependencies:
+  - role: apt/fish
+    when: fish is undefined

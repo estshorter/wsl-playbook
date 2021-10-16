@@ -1,0 +1,10 @@
+- import_role: { name: check/absent }
+  vars:
+    target: fd
+    command: "dpkg-query -W fd | grep -E '{{ fd_version }}'"
+
+- name: Install from deb
+  become: yes
+  apt:
+    deb: "{{ fd_url }}"
+  when: fd_is_absent
