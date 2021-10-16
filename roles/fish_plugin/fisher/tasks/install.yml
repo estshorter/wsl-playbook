@@ -1,0 +1,4 @@
+- name: Install
+  shell:
+    cmd: "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+    executable: /usr/bin/fish

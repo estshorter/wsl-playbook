@@ -1,0 +1,10 @@
+- import_role: { name: check/absent }
+  vars:
+    target: ripgrep
+    command: "dpkg-query -W ripgrep | grep -E '{{ ripgrep_version }}'"
+
+- name: Install from deb
+  become: yes
+  apt:
+    deb: "{{ ripgrep_url }}"
+  when: ripgrep_is_absent

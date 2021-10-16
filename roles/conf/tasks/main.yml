@@ -1,0 +1,18 @@
+- name: Download .gitconfig
+  get_url:
+    url: https://raw.githubusercontent.com/estshorter/config/master/.gitconfig.raspi
+    dest: /home/{{ ansible_user_id }}/.gitconfig
+- name: use fish instead of bash
+  lineinfile:
+    path: /home/{{ ansible_user_id }}/.bashrc
+    state: present
+    regexp: '^exec fish'
+    line: 'exec fish'
+- name: suppress fish greeting message
+  shell:
+    cmd: set fish_greeting
+    executable: /usr/bin/fish
+- name: Download config.fish
+  get_url:
+    url: https://raw.githubusercontent.com/estshorter/config/master/config.fish.raspi
+    dest: /home/{{ ansible_user_id }}/.config/fish/config.fish

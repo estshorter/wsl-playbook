@@ -1,0 +1,14 @@
+- hosts: all
+  roles:
+    - apt/upgrade
+    - apt/install
+    - apt/git
+    - ar/fzf
+    - deb/bat
+    - deb/delta
+    - deb/ripgrep
+    - conf
+    - fish_plugin/fisher
+    - fish_plugin/z
+    - fish_plugin/fzf
+    - fish_plugin/theme-bobthefish

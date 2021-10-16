@@ -1,0 +1,11 @@
+  - name: Install packages using apt
+    become: yes
+    apt:
+      name: 
+        - language-pack-ja
+        - build-essential
+        - cmake
+        - ninja-build
+        - pkg-config
+        - wget
+        - curl
