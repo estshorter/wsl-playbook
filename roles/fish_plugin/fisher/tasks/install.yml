@@ -1,4 +1,9 @@
+- name: Download fisher.config
+  get_url:
+    url: https://git.io/fisher
+    dest: /tmp/fisher.config
+
 - name: Install
   shell:
-    cmd: "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+    cmd: "source /tmp/fisher.config && fisher install jorgebucaran/fisher"
     executable: /usr/bin/fish
