@@ -4,6 +4,7 @@
       name: 
         - language-pack-ja
         - build-essential
+        - clang
         - cmake
         - ninja-build
         - pkg-config
