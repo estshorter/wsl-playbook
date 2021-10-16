@@ -4,9 +4,11 @@
       name: 
         - language-pack-ja
         - build-essential
+        - clang
         - cmake
         - ninja-build
         - pkg-config
         - wget
         - curl
         - unzip
+        - htop

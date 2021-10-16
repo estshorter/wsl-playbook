@@ -6,7 +6,7 @@
 - name: "Install"
   become: yes
   apt:
-    name: git
+    name: fish
 
 - set_fact:
     fish: true
