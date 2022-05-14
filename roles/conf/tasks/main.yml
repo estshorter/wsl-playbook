@@ -1,6 +1,6 @@
 - name: Download .gitconfig
   get_url:
-    url: https://raw.githubusercontent.com/estshorter/config/master/.gitconfig.raspi
+    url: https://raw.githubusercontent.com/estshorter/config/master/.gitconfig.linux
     dest: /home/{{ ansible_user_id }}/.gitconfig
 - name: use fish instead of bash
   blockinfile:
