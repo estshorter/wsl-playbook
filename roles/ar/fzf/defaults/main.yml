@@ -1,2 +1,2 @@
-fzf_version: 0.33.0
+fzf_version: 0.34.0
 fzf_filename: "https://github.com/junegunn/fzf/releases/download/{{ fzf_version }}/fzf-{{ fzf_version }}-linux_amd64.tar.gz"
