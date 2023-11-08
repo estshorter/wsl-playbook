@@ -4,7 +4,7 @@
     - apt/install_essentials
     - apt/git
     - apt/fish
-    - ar/exa
+    - apt/eza
     - ar/fzf
     - deb/bat
     - deb/delta
