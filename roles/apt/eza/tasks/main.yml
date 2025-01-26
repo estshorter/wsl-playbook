@@ -1,14 +1,14 @@
-- name: Add exa gpg key
+- name: Add eza gpg key
   become: yes
   get_url:
     url: https://raw.githubusercontent.com/eza-community/eza/main/deb.asc
-    dest: /etc/apt/keyrings/exa.asc
+    dest: /etc/apt/keyrings/eza.asc
     mode: '0644'
 
 - name: "Add repository"
   become: yes
   apt_repository:
-    repo: "deb [signed-by=/etc/apt/keyrings/exa.asc] http://deb.gierens.de stable main"
+    repo: "deb [signed-by=/etc/apt/keyrings/eza.asc] http://deb.gierens.de stable main"
 
 - name: "Install"
   become: yes
