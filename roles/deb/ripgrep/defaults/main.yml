@@ -1,4 +1,5 @@
-ripgrep_version: 15.0.0
+ripgrep_version: 15.1.0
 ripgrep_deb_version: 1
 ripgrep_url: "https://github.com/BurntSushi/ripgrep/releases/download/{{ ripgrep_version }}/ripgrep_{{ ripgrep_version }}-{{ ripgrep_deb_version }}_amd64.deb"
+
 
